@@ -1,9 +1,35 @@
-section{
+/* CSS Notes
+
+ -  A lista de estilo aplicada é lida de cima para baixo nesta ordem sempre tal como no javascript
+ uma classe tem uma importancia maior do que um h1 ou p por exemplo dai estar a ser usando primeiro
+ mesmo estando abaixo do h1.
+
+ -  A utilização de herenaça no css tem o problema que tem uma especifidade muita baixa. 
+   Proque nao estao a selecionar diretamente um elemento
+
+-   Combinadores/Combinator:
+        - combinar multiplos selectors de css
+
+-   A regra com mais informaçao ganha em termos de especificadade
+
+*/
+/* * global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview{
     background-color: #ff1b68;
 }
 
-
-h1{
+/* * aplicar apenas a qualuer h1 esteja dentro de um id  product-overview */
+#product-overview h1{
     color: white;
     font-family: 'Anton', sans-serif;
+}
+
+
+
+.section-title{
+    color: #2ddf5c;
 }
