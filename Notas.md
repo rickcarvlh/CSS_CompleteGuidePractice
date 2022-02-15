@@ -6,3 +6,10 @@
     Link:
     <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing>
 
+Block level elements:
+   Ocupam sempre toda a width disponivel ao contrario de elementos inline
+
+Altura de um elemento
+   html -> body -> main e nesta ordem
+   100% -> 100% -> 100%
+   Funciona como herança
