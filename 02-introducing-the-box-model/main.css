@@ -1,13 +1,24 @@
+*{
+    box-sizing: border-box;
+    /* needs to be here because section is a box element */
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     /* o body tem valores default que deve ser removidos de prefencia */
     margin: 0;
+    box-sizing: border-box;
 }
 
 #product-overview {
     background: #ff1b68;
     width: 100;
     height: 528px;
+    padding: 10px;
+    /* related to the exemplo of box-sizing: border-box; 
+    border: 5px solid black;
+    margin: 10px; 
+    */ 
 
 }
 
@@ -23,3 +34,4 @@ body {
 /* h1 {
     font-family: sans-serif;
 } */
+
