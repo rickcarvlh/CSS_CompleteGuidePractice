@@ -35,3 +35,11 @@ body {
     font-family: sans-serif;
 } */
 
+.main-header {
+    /* block level element so optional it will always take the full width */
+    width: 100%;
+    background-color: 	#90EE90;
+    /* top and bottom = 8 | left and right = 16 */
+    padding: 8px 16px;
+
+}
