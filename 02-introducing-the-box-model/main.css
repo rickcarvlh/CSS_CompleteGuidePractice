@@ -43,3 +43,44 @@ body {
     padding: 8px 16px;
 
 }
+
+/* practicar combinadors / combinators css */
+/* select only the div that is the direct child */
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+ 
+}
+
+.main-header-brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* working as a container */
+.main-nav{
+    display: inline-block;
+    text-align: right;
+       /* 100% minus the above div (not a clean solution) */
+    width: calc(100% - 75px);
+    vertical-align: middle;
+      
+}
+
+.main-nav-items{
+    /* removing the margin and padding 
+        works because of display: inline-block
+    */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+.main-nav-item{
+    /* ganha o comporto  de elemntos block apwsar de ainda serem elemnetos inline
+    faz com ja seja possivel adicionar padding e margin*/ 
+    display: inline-block;
+}
