@@ -80,8 +80,27 @@ body {
 
 }
 
+
+
 .main-nav-item{
     /* ganha o comporto  de elemntos block apwsar de ainda serem elemnetos inline
     faz com ja seja possivel adicionar padding e margin*/ 
     display: inline-block;
+    
+}
+
+.main-nav-item  a {
+    text-decoration: none;
+    color: #0e4f1f;
+    /* top and bottom left and righ */
+    margin: 0 16px;
+}
+
+/*  PSEUDO CLASSES */ 
+.main-nav-item a:hover {
+    color: white;
+}
+
+.main-nav-item a:active {
+    color: white;
 }
