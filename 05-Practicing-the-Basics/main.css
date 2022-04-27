@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     /* needs to be here because section is a box element */
 }
@@ -19,7 +19,7 @@ body {
     /* related to the exemplo of box-sizing: border-box; 
     border: 5px solid black;
     margin: 10px; 
-    */ 
+    */
 
 }
 
@@ -40,6 +40,22 @@ body {
     margin: 8px;
     display: inline-block;
     min-width: 30%;
+
+
+}
+
+.plan-highlighted {
+    background-color: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.plan__annotation {
+    color: #19b84c;
+    background-color: #fff;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 4px 4px 4px 4px;
 }
 
 /* h1 {
@@ -49,7 +65,7 @@ body {
 .main-header {
     /* block level element so optional it will always take the full width */
     width: 100%;
-    background-color: 	#90EE90;
+    background-color: #90EE90;
     /* top and bottom = 8 | left and right = 16 */
     padding: 8px 16px;
 
@@ -57,10 +73,10 @@ body {
 
 /* practicar combinadors / combinators css */
 /* select only the div that is the direct child */
-.main-header > div {
+.main-header>div {
     display: inline-block;
     vertical-align: middle;
- 
+
 }
 
 .main-header-brand {
@@ -72,16 +88,16 @@ body {
 
 /* working as a container */
 /* align text a new way */
-.main-nav{
+.main-nav {
     display: inline-block;
     text-align: right;
-       /* 100% minus the above div (not a clean solution) */
+    /* 100% minus the above div (not a clean solution) */
     width: calc(100% - 75px);
     vertical-align: middle;
-      
+
 }
 
-.main-nav-items{
+.main-nav-items {
     /* removing the margin and padding 
         works because of display: inline-block
     */
@@ -92,16 +108,16 @@ body {
 }
 
 
-.main-nav-item{
+.main-nav-item {
     /* ganha o comporto  de elemntos block apwsar de ainda serem elemnetos inline
-    faz com ja seja possivel adicionar padding e margin*/ 
+    faz com ja seja possivel adicionar padding e margin*/
     display: inline-block;
-    
+
 }
 
 
 
-.main-nav-item  a {
+.main-nav-item a {
     text-decoration: none;
     color: #0e4f1f;
     /* top and bottom left and righ */
@@ -113,7 +129,7 @@ body {
 
 
 
-/*  PSEUDO CLASSES */ 
+/*  PSEUDO CLASSES */
 /* .main-nav-item a::after {
     content: " (Link)";
     color: red;
@@ -122,13 +138,12 @@ body {
 
 /* GROUPING CLASSES */
 .main-nav-item a:hover,
-.main-nav-item a:active
- {
+.main-nav-item a:active {
     color: white;
     border-bottom: 3px solid white;
 }
 
-.main-nav-item-cta a{
+.main-nav-item-cta a {
     color: white;
     background-color: #ff1b68;
     padding: 8px 16px;
@@ -136,7 +151,7 @@ body {
 }
 
 .main-nav-item-cta a:hover,
-.main-nav-item-cta a:active{
+.main-nav-item-cta a:active {
     color: #ff1b68;
     background-color: white;
     border: none;
