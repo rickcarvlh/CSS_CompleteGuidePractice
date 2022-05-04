@@ -101,6 +101,10 @@ body {
     color: black;
 }
 
+.button:focus {
+    outline: none;
+}
+
 
 /* h1 {
     font-family: sans-serif;
