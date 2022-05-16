@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    /* needs to be here because section is a box element */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* o body tem valores default que deve ser removidos de prefencia */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #0e4f1f;
+    color: #fff;
+    font: inherit;
+    border: 1.5px solid #0e4f1f;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:active {
+    background-color: #fff;
+    color: black;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+.main-header {
+    /* block level element so optional it will always take the full width */
+    width: 100%;
+    background-color: #90EE90;
+    /* top and bottom = 8 | left and right = 16 */
+    padding: 8px 16px;
+
+}
+
+/* practicar combinadors / combinators css */
+/* select only the div that is the direct child */
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.main-header-brand {
+    color: #0e4f1f;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/* working as a container */
+/* align text a new way */
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    /* 100% minus the above div (not a clean solution) */
+    width: calc(100% - 75px);
+    vertical-align: middle;
+
+}
+
+.main-nav-items {
+    /* removing the margin and padding 
+        works because of display: inline-block
+    */
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+
+.main-nav-item {
+    /* ganha o comporto  de elemntos block apwsar de ainda serem elemnetos inline
+    faz com ja seja possivel adicionar padding e margin*/
+    display: inline-block;
+
+}
+
+
+
+.main-nav-item a {
+    text-decoration: none;
+    color: #0e4f1f;
+    /* top and bottom left and righ */
+    margin: 0 16px;
+    font-weight: bold;
+    /* top and bottom left and righ */
+    padding: 3px 0;
+}
+
+
+
+/*  PSEUDO CLASSES */
+/* .main-nav-item a::after {
+    content: " (Link)";
+    color: red;
+    EXAMPLE CODE
+} */
+
+/* GROUPING CLASSES */
+.main-nav-item a:hover,
+.main-nav-item a:active {
+    color: white;
+    border-bottom: 3px solid white;
+}
+
+.main-nav-item-cta a {
+    color: white;
+    background-color: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-nav-item-cta a:hover,
+.main-nav-item-cta a:active {
+    color: #ff1b68;
+    background-color: white;
+    border: none;
+}
+
+/* FOOTER */
+.main-footer {
+    background-color: black;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+.main-footer__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 1px 0;
+}
+
+.main-footer__links a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
